@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: 0SOz2Z4gFOphqFpa5RemA4t7UsozLqCdy/KuetB/W5ugiJ431IL/09VIdsIBi0ShCsbIle+YmSYWtnUA/haLW3fQDAANqAC8Di/JZw8H0bnYerjam2I4qwxTBm7AFaQsNnZZAa9LPgk7oCAyLp/HY/AfGBt3zSyMnRrTf+hc9Tke9aGTu0EBHrmbzwM/xbfTQ9ybWYyAibCNryN1FEitOcGhL9jhN0CXBTrXVzPuFFfXdHmv5dmZqEwUeB+ZXVwEneLigZMFcNaqLMvkBzP6y38C+mtihIgw1rh83fvtR3SvHWzRn/78/Ll0z04vPan2unMFlaQkUrWr/KJ9WTGiGQpgRCYbLLH6lwDjnaeF43JUZr6avF3mVEcegMyigmQf4IUniv9eum7bk8bSbR/6ObTYOYPxKyyFhBH36CEPVksu+RJ5rMMrlozvH5itlDj5MwSxSuMqzLBVJywFIRpE1Nf6snI5CBTjU6ZOd3Vc4cZjJ4RkgxNQHKQRitIYWdQxyUc4vY5zkeXv+p4/rsJIutS+UovkFkAsxYEPREGxnIylhQ4LTVswDB4wLyRG4Vx5sJruPInoKEJnKA2dc5+AMUFKiEiaQGmYIqXjOSWGdvJ9BV28gYRekGROgpEUOIINDfZObtgGZ+Ubtdc6Ebg1LmdDtmrs7CJGIT/Q5fZdbtM=
+  app: gentle-chamber-84945
+  on:
+    repo: DeliaCodes/react-trello-testing
